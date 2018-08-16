@@ -18,7 +18,6 @@
             "TelcoLAB\\Freshdesk\\Laravel\\": "src/"
         }
     },
-    "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [
