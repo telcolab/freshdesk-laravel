@@ -1,0 +1,32 @@
+{
+    "name": "telcolab/freshdesk-laravel",
+    "description": "A Freshdesk adapter for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Haries Nur Ikhwan",
+            "email": "hariesnurikhwan@gmail.com"
+        }
+    ],
+    "require": {
+        "telcolab/freshdesk-sdk": "^0.1.0",
+        "php-http/guzzle6-adapter": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "TelcoLAB\\Freshdesk\\Laravel\\": "src/"
+        }
+    },
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TelcoLAB\\Freshdesk\\Laravel\\FreshdeskServiceProvider"
+            ],
+            "aliases": {
+                "Freshdesk": "TelcoLAB\\Freshdesk\\Laravel\\Freshdesk"
+            }
+        }
+    }
+}
